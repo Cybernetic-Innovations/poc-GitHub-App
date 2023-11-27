@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Cybernetic_Innovations_poc_GitHub_App_1701129391506-pr-trigger-input-set
+  identifier: Build_Cybernetic_Innovations_poc_GitHub_App_1701129391506prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_Cybernetic_Innovations_poc_GitHub_App_1701129391506
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
