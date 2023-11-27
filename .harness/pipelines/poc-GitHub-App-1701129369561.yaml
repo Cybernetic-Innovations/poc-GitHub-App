@@ -1,0 +1,33 @@
+pipeline:
+  identifier: Build_Cybernetic_Innovations_poc_GitHub_App_1701129391506
+  name: Build poc-GitHub-App
+  orgIdentifier: default
+  projectIdentifier: default_project
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github_OAuth_1701129339143
+        repoName: Cybernetic-Innovations/poc-GitHub-App
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
