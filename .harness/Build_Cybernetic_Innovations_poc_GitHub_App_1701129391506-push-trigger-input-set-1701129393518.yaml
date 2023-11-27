@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_Cybernetic_Innovations_poc_GitHub_App_1701129391506-push-trigger-input-set
+  identifier: Build_Cybernetic_Innovations_poc_GitHub_App_1701129391506pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_Cybernetic_Innovations_poc_GitHub_App_1701129391506
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
